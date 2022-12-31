@@ -1,0 +1,535 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* HEADER============================== */
+/*  HEADER CONTENT ==================== */
+/* MAIN==== */
+/* part 1 */
+/* .part1 .grid .grid-item p,
+.part1 .grid .grid-item h1 {
+    max-width: 100%;
+} */
+/* part2 */
+/* CONTACT FORM */
+/* FOOTER */
+/* DESKTOP */
+button {
+	overflow: visible;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	text-transform: none;
+	-webkit-appearance: button;
+	&::-moz-focus-inner {
+		border-style: none;
+		padding: 0;
+	}
+	&:-moz-focusring {
+		outline: ButtonText dotted 1px;
+	}
+}
+hr {
+	overflow: visible;
+	box-sizing: content-box;
+	height: 0;
+}
+input {
+	overflow: visible;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+progress {
+	vertical-align: baseline;
+}
+sub {
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	bottom: -.25em;
+}
+sup {
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	top: -.5em;
+}
+[type=checkbox] {
+	box-sizing: border-box;
+	padding: 0;
+}
+[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+}
+legend {
+	box-sizing: border-box;
+	padding: 0;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	white-space: normal;
+}
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+	font-family: "Source Sans Pro", sans-serif;
+	line-height: 26px;
+}
+body {
+	margin: 0;
+}
+details {
+	display: block;
+}
+main {
+	display: block;
+}
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+code {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+kbd {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+pre {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+samp {
+	font-family: monospace,monospace;
+	font-size: 1em;
+}
+a {
+	background-color: transparent;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+b {
+	font-weight: bolder;
+}
+strong {
+	font-weight: bolder;
+}
+small {
+	font-size: 80%;
+}
+img {
+	border-style: none;
+}
+optgroup {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+select {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	text-transform: none;
+}
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	overflow: auto;
+}
+[type=button] {
+	-webkit-appearance: button;
+	&::-moz-focus-inner {
+		border-style: none;
+		padding: 0;
+	}
+	&:-moz-focusring {
+		outline: ButtonText dotted 1px;
+	}
+}
+[type=reset] {
+	-webkit-appearance: button;
+	&::-moz-focus-inner {
+		border-style: none;
+		padding: 0;
+	}
+	&:-moz-focusring {
+		outline: ButtonText dotted 1px;
+	}
+}
+[type=submit] {
+	-webkit-appearance: button;
+	&::-moz-focus-inner {
+		border-style: none;
+		padding: 0;
+	}
+	&:-moz-focusring {
+		outline: ButtonText dotted 1px;
+	}
+}
+fieldset {
+	padding: .35em .75em .625em;
+}
+[type=number] {
+	&::-webkit-inner-spin-button {
+		height: auto;
+	}
+	&::-webkit-outer-spin-button {
+		height: auto;
+	}
+}
+[type=search] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+	&::-webkit-search-decoration {
+		-webkit-appearance: none;
+	}
+}
+&::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+summary {
+	display: list-item;
+}
+[hidden] {
+	display: none;
+}
+template {
+	display: none;
+}
+* {
+	box-sizing: border-box;
+	&:before {
+		box-sizing: border-box;
+	}
+	&:after {
+		box-sizing: border-box;
+	}
+}
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 1.5rem;
+}
+.logo {
+	img {
+		width: 200px;
+	}
+	margin: auto;
+	padding-right: 2.5rem;
+}
+.nav-bar {
+	a {
+		text-decoration: none;
+		color: white;
+		&:hover {
+			color: #FF6565;
+		}
+	}
+	flex-basis: 100%;
+	display: none;
+	ul {
+		list-style: none;
+		padding: 1rem 0 0 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		li {
+			margin-bottom: 2rem;
+		}
+	}
+}
+.menu-btn {
+	position: relative;
+	display: none;
+	&:checked {
+		~ {
+			.nav-bar {
+				display: block;
+			}
+			.menu-icon {
+				.navicon {
+					background: transparent;
+					&::before {
+						transform: rotate(45deg);
+						top: 0;
+					}
+					&::after {
+						transform: rotate(-45deg);
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.menu-icon {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	user-select: none;
+	padding: .5rem;
+	margin-left: 1rem;
+}
+.navicon {
+	display: block;
+	width: 1.1rem;
+	height: .12rem;
+	background: white;
+	position: relative;
+	transition: background .2s ease-out;
+	&::after {
+		display: block;
+		content: "";
+		width: 140%;
+		height: 100%;
+		background-color: white;
+		position: absolute;
+		transition: all .2s ease-out;
+		top: .5rem;
+	}
+	&::before {
+		display: block;
+		content: "";
+		width: 140%;
+		height: 100%;
+		background-color: white;
+		position: absolute;
+		transition: all .2s ease-out;
+		top: -.5rem;
+	}
+}
+.hero-header {
+	background-image: url("./images/headphones_hero_1.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+.hero-content {
+	margin: 17rem auto 0 auto;
+	text-align: center;
+	color: white;
+	padding-bottom: 10rem;
+	max-width: 1000px;
+	h1 {
+		margin-bottom: .3rem;
+	}
+	.sub-title {
+		margin-top: 0;
+	}
+}
+.hero-button {
+	color: white;
+	background-color: #FF6565;
+	font-size: 14px;
+	padding: 1rem 2.3rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 22px;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.9;
+	}
+}
+.title-content {
+	text-align: center;
+	padding: 6rem 1.5rem;
+	p {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}
+.grid {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+	justify-content: center;
+	.grid-item {
+		text-align: center;
+		margin-bottom: 4.5rem;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+.part2 {
+	background-image: url(./images/headphones_hero_2.jpg);
+	background-size: cover;
+	z-index: 0;
+	background-position: center center;
+	color: white;
+	.grid {
+		.grid-item {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			p {
+				position: absolute;
+				margin: 0;
+				width: 20px;
+				z-index: 2;
+				&:nth-child(1) {
+					font-weight: bolder;
+					top: 40%;
+					left: 25%;
+					font-size: 50px;
+				}
+				&:nth-child(2) {
+					top: 65%;
+					left: 20%;
+					font-size: 14px;
+					width: 150px;
+					text-align: justify;
+				}
+			}
+		}
+	}
+}
+.contact-form {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+	h1 {
+		text-align: center;
+	}
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.input {
+		margin-top: 3rem;
+		width: 340px;
+		border: none;
+		border-bottom: solid thin;
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: transparent;
+		}
+	}
+	.input-container {
+		&:focus-within {
+			.label {
+				color: #FF6565;
+				opacity: 1;
+				font-weight: bold;
+			}
+			.input {
+				border-bottom: solid medium #FF6565;
+				transition: all .1s ease-out;
+			}
+		}
+		.input {
+			&:placeholder-shown {
+				~ {
+					.label {
+						font-weight: normal;
+						font-style: normal;
+						opacity: .3;
+						top: 60%;
+						left: 0%;
+						transition: all .1s ease-out;
+					}
+				}
+			}
+		}
+	}
+}
+.input-container {
+	position: relative;
+	label {
+		display: none;
+	}
+	.label {
+		position: absolute;
+		opacity: 1;
+		font-weight: bold;
+		font-style: italic;
+		left: 0%;
+		top: 30%;
+		transition: all .1s ease-out;
+	}
+}
+.footer {
+	background-color: #071629;
+	small {
+		display: block;
+		text-align: center;
+		color: white;
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+		opacity: .3;
+		font-weight: 100;
+	}
+}
+.logo-social {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	div {
+		margin-top: 4rem;
+	}
+	.logo {
+		padding: 0;
+	}
+	.social {
+		display: flex;
+		width: 180px;
+		justify-content: space-evenly;
+	}
+}
+.pentagon-1 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: #FF6565;
+	left: 0;
+	z-index: 1;
+	clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}
+@media screen and (min-width: 481px) {
+	.nav-bar {
+		display: block;
+		flex-basis: 0;
+		ul {
+			flex-direction: row;
+			justify-content: space-around;
+			width: 300px;
+		}
+	}
+	.menu-icon {
+		display: none;
+	}
+	.logo {
+		margin: 0;
+	}
+	.header {
+		justify-content: space-around;
+	}
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+	.logo-social {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
